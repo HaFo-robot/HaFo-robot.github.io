@@ -415,60 +415,7 @@
 
 
 
-<!-- <!-- 对比结果展示区的代码，原本包含下拉菜单动态切换视频功能，但现在菜单被注释，只能显示静态的默认对比视频。 -->
-<section class="section">
-  <div class="container">
-    <!-- Title -->
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-2 has-text-centered" style="padding-bottom: 0px;">Comparative Results</h2>
-        <p class="has-text-centered is-size-5" style="margin-bottom: 20px; padding-bottom: 0px;">
-          (Played at the original speed)
-        </p>
-      </div>
-    </div> -->
-
-    <!-- 实现下拉菜单两个视频对比 -->
-    <!-- Task Menu -->
-    <!-- <div class="has-text-centered" style="margin-bottom: 20px;">
-      <b>Evaluated on task</b>
-      <div class="select is-small">
-        <select id="comparative-menu-tasks" onchange="updateComparativeVideos()">
-          <option value="swallow">Swallow Balance</option>
-          <option value="bruce">Bruce Lee's Kick</option>
-          <option value="nezha">Ne Zha Pose</option>
-          <option value="singleleg">Single-Leg Stand</option>
-          <option value="squat">Deep Squat</option>
-        </select>
-      </div>
-    </div> -->
-
-    <!-- Two side-by-side videos with spacing and rounded corners -->
-    <div class="columns is-variable is-4" style="margin-bottom: 50px;">
-      <!-- HuB -->
-      <div class="column has-text-centered">
-        <h3 class="title is-5">HAFO</h3>
-        <!-- <h3 class="title is-6" style="visibility: hidden;">(placeholder)</h3> -->
-        <video id="comparative-video1" controls muted autoplay loop playsinline controlsList="nodownload"
-               style="width: 100%; border-radius: 10px;">
-          <source src="media/tasks/swallow_compressed.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <!-- OmniH2O -->
-      <div class="column has-text-centered">
-        <h3 class="title is-5">OmniH2O</h3>
-        <!-- <h3 class="title is-6" style="color: red;">(trained from scratch using the same balance data and keypoint targets as HuB)</h3> -->
-        <video id="comparative-video2" controls muted autoplay loop playsinline controlsList="nodownload"
-               style="width: 100%; border-radius: 10px;">
-          <source src="media/baseline/swallow_compressed.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+<!-- <!-- <!-- 对比结果展示区的代码，原本包含下拉菜单动态切换视频功能，但现在菜单被注释，只能显示静态的默认对比视频。 -->
 
 <!-- 学术论文摘要 -->
 <section class="section">
