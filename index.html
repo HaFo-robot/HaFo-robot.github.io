@@ -433,23 +433,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The human body demonstrates exceptional motor capabilities—such as standing steadily on one 
-            foot or performing a high kick with the leg raised over 1.5 meters—both requiring precise balance control. 
-            While recent research on humanoid control has leveraged reinforcement learning to track human motions 
-            for skill acquisition, applying this paradigm to balance-intensive tasks remains challenging. 
+            Reinforcement learning controllers have made impressive progress in humanoid locomotion and light load manipulation. However, 
+            achieving robust and precise motion with strong force interaction remains a significant challenge.
           </p>
           <p> 
-            In this work, we identify three key obstacles: instability from reference motion errors, 
-            learning difficulties due to morphological mismatch, and the sim-to-real gap caused by sensor noise and unmodeled dynamics. 
-            To address these challenges, we propose <b>HuB</b> (<b>Hu</b>manoid <b>B</b>alance), 
-            a unified framework that integrates <em>reference motion refinement</em>, <em>balance-aware policy learning</em>, 
-            and <em>sim-to-real robustness training</em>, with each component targeting a specific challenge. 
+            Based on the above limitations, this paper proposes HAFO, a dual-agent reinforcement learning control framework that simultaneously optimizes both a robust locomotion strategy and a precise upper-body manipulation strategy through coupled training under external force interaction environments. 
+            Simultaneously, we explicitly model the external pulling disturbances through a spring-damper system and achieve fine-grained force control by manipulating the virtual spring. During this process, the reinforcement-learning policy spontaneously generates disturbance-rejection response by exploiting environmental feedback. 
+            Moreover, HAFO employs an asymmetric Actor-Critic framework in which the Critic-network access to privileged spring-damping forces guides the actor-network to learn a generalizable, robust policy for resisting external disturbances. 
           </p>
           <p> 
-            We validate our approach on the Unitree G1 humanoid robot across challenging quasi-static balance tasks, 
-            including extreme single-legged poses such as <code style="color: black; background-color: transparent;">Swallow Balance</code> and <code style="color: black; background-color: transparent;">Bruce Lee's Kick</code>. 
-            Our policy remains stable even under strong physical disturbances—such as a forceful soccer 
-            strike—while baseline methods consistently fail to complete these tasks.
+            The experimental results demonstrate that HAFO achieves stable control of humanoid robot under various strong force interactions, 
+            showing remarkable performance in load tasks and ensuring stable robot operation under rope tension disturbances. Project website: hafo-robot.github.io.
           </p>
         </div>
       </div>
@@ -510,6 +504,7 @@
 
 </body>
 </html>
+
 
 
 
