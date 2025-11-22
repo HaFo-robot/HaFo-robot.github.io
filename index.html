@@ -458,16 +458,16 @@
 
     <div class="rows is-centered ">
       <div class="row is-full-width">
-        <h2 class="title is-3"><span class="dperact">Learning Framework for Extreme Humanoid Balance</span></h2>
+        <h2 class="title is-3"><span class="dperact">Humanoid Force-Adaptive Control framework for Intense External Force Interaction</span></h2>
 
         <img src="media/figures/method.jpeg" class="interpolation-image" 
          alt="Interpolate start reference image." />
           <p>
-            <b>HuB Overview.</b> To tackle the challenges of extreme balance tasks on humanoids, 
-            HuB integrates three components: 
-            (a) a motion refinement process that improves the quality and feasibility of reference motions; 
-            (b) a balance-aware policy learning strategy that enables stable execution of challenging balance motions; 
-            and (c) a robustness training mechanism to improve sim-to-real consistency and deployment stability.
+            <b>HAFO Overview.</b> (a) Policy training. A dual-agent strategy with decoupled upper and lower bodies is adopted, 
+            where the lower-body policy takes root linear and angular velocities as command inputs, and the upper-body policy uses reference joint trajectories as command inputs. 
+            Meanwhile, various explicit dynamic perturbations are introduced at key locations to enhance the system's robustness and adaptability. 
+            (b) Strategy deployment. A humanoid robot control system based on teleoperation is developed, employing an efficient inverse kinematics algorithm to compute the robot's joint angles in real time with high precision, 
+            enabling efficient loco-manipulation tasks.
           </p>
 
       </div>
@@ -527,6 +527,7 @@
 
 </body>
 </html>
+
 
 
 
